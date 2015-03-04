@@ -17,6 +17,10 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 CUR_DIR=`cd $(dirname $0); cd ..; pwd`
 
+echo "-----> BUILD_DIR = $BUILD_DIR"
+echo "-----> CACHE_DIR = $CACHE_DIR"
+
+
 mkdir -p $BUILD_DIR $CACHE_DIR
 
 if [[ ! -e "$BUILD_DIR/www" ]]; then
